@@ -11,7 +11,7 @@ import Contacto from './components/Contacto';
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ backgroundColor: '#fff4e1' }}>
+      <div style={{ backgroundColor: '#B5D0CC' }}>
         <NavBar>
           {/* Enlaces de navegación */}
           <NavLink to="/" className="nav-link" activeClassName="active" exact>Inicio</NavLink>
