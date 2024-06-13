@@ -115,4 +115,12 @@
 .services-container .btn {
   margin-top: 10px;
   font-size: 0.9rem;
+
+}
+ /*our team */
+
+.team-member-img {
+  width: 500px; /* Ajusta el tamaño de las imágenes según tus preferencias */
+  height: 500px;
+  object-fit: cover; /* Ajusta el modo de ajuste para que las imágenes se vean bien en los círculos */
 }

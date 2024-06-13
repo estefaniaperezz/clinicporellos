@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import './index.css'; // Asegúrate de que el archivo CSS esté importado
 import Services from './components/Services';
+import OurTeam from './components/OurTeam'; // Importa el componente OurTeam
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#fff4e1' }}> {/* Reemplaza #colorQueQuieres con el código de color que prefieras */}
+    <div style={{ backgroundColor: '#fff4e1' }}> {/* Ajuste del color de fondo */}
       <NavBar />
       <div className="hero-container position-relative">
         <img src="/fondo.png" alt="Imagen de fondo" className="img-fluid w-100" />
@@ -17,13 +18,11 @@ function App() {
         </div>
       </div>
       <Services />
+      <OurTeam />
     </div>
   );
 }
 
-
-
 export default App;
-
 
 
