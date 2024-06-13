@@ -6,22 +6,22 @@ import Services from './components/Services';
 
 function App() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#fff4e1' }}> {/* Reemplaza #colorQueQuieres con el código de color que prefieras */}
       <NavBar />
-      <div className="hero-container position-relative"> {/* Ajuste en la clase contenedora */}
-        {/* Imagen */}
-        <img src="/fondo.png" alt="Imagen de fondo" className="img-fluid w-100" /> {/* Ajuste en el tamaño de la imagen */}
-        {/* Texto y botón */}
+      <div className="hero-container position-relative">
+        <img src="/fondo.png" alt="Imagen de fondo" className="img-fluid w-100" />
         <div className="overlay-content text-center">
           <h1>Clínica Veterinaria Por Ellos</h1>
           <p>Bienvenidos a Clínica Veterinaria Por Ellos, donde el bienestar de tu mascota es nuestra misión. Cada mascota que atendemos es tratada con la dedicación y el cariño que se merece. Reserva tu cita aquí y confía en nuestro equipo para mantener a tu mascota sana y feliz. Tu tranquilidad es nuestra prioridad.</p>
           <button className="btn btn-primary">Pide Cita</button>
         </div>
       </div>
-      <Services /> {'./components/Services'}
+      <Services />
     </div>
   );
 }
+
+
 
 export default App;
 

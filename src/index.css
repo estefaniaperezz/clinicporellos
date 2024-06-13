@@ -1,11 +1,9 @@
 
 /* Estilos generales de la aplicación */
-body {
-  background-color: #FFF4E1; /* Color de fondo para toda la página */
-  font-family: 'Roboto', sans-serif; /* Ejemplo de cambio de fuente */
-  margin: 0; /* Asegura que no haya márgenes alrededor del cuerpo */
-  padding: 0; /* Asegura que no haya relleno alrededor del cuerpo */
-}
+
+  body {
+    background-color: #fff4e1; 
+  }
 .App {
   text-align: center;
 }
