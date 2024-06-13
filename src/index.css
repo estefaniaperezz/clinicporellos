@@ -124,3 +124,40 @@
   height: 500px;
   object-fit: cover; /* Ajusta el modo de ajuste para que las imágenes se vean bien en los círculos */
 }
+
+
+/*footer*/
+.footer {
+  background-color: #B5D0CC;
+}
+.footer-container {
+  background-color: #B5D0CC;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-img {
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  margin-bottom: 20px; /* Espacio entre el logo y el texto */
+}
+
+.info-container {
+  margin-bottom: 10px; /* Espacio entre el texto y los íconos sociales */
+  background-color: #B5D0CC;
+}
+
+.social-container {
+  display: flex;
+ 
+  justify-content: flex-end; /* Alinea los íconos a la derecha */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  margin-top: -55px;
+}
+
+.social-container a {
+  color: #ffE4e1; /* Cambia el color de los íconos si es necesario */
+}
