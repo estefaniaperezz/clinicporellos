@@ -13,7 +13,7 @@
   color: black; /* Cambia "rosa" al color que desees */
 }
 .navbar {
-  background-color: #fff4e1; /* Rosa pastel */
+  background-color: #FFE4E1; /* Rosa pastel */
 
 }
 
@@ -63,7 +63,7 @@
   background-color: #B5D0CC; /* Fondo semi-transparente para mejorar la legibilidad */
   padding: 20px;
   border-radius: 10px;
-  max-width: 600px; /* Limita el ancho del cuadro */
+  max-width: 700px; /* Limita el ancho del cuadro */
 }
 
 .overlay-content h1 {
@@ -141,7 +141,7 @@
 }
 
 .logo-img {
-  width: 100px; /* Ajusta el tamaño según sea necesario */
+  width: 180px; /* Ajusta el tamaño según sea necesario */
   margin-bottom: 20px; /* Espacio entre el logo y el texto */
 }
 
@@ -152,7 +152,6 @@
 
 .social-container {
   display: flex;
- 
   justify-content: flex-end; /* Alinea los íconos a la derecha */
   width: 100%; /* Asegura que ocupe todo el ancho disponible */
   margin-top: -55px;
@@ -160,4 +159,26 @@
 
 .social-container a {
   color: #ffE4e1; /* Cambia el color de los íconos si es necesario */
+}
+
+
+
+@media (max-width: 768px) {
+  .overlay-content {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .overlay-content h1 {
+    font-size: 24px;
+  }
+
+  .overlay-content p {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function OurTeam() {
   return (
-    <div className="team-container container mt-5" style={{ backgroundColor: '#B5D0CC', padding: '50px 0' }}>
+    <div className="team-container container mt-5" style={{ backgroundColor: '#FFF4e1', padding: '50px 0' }}>
       <h2 className="text-center mb-4">Nuestro Equipo</h2>
       <div className="row justify-content-center">
         <div className="col-md-3 mb-4 text-center">
