@@ -1,7 +1,11 @@
 
 /* Estilos generales de la aplicación */
-
-
+body {
+  background-color: #FFF4E1; /* Color de fondo para toda la página */
+  font-family: 'Roboto', sans-serif; /* Ejemplo de cambio de fuente */
+  margin: 0; /* Asegura que no haya márgenes alrededor del cuerpo */
+  padding: 0; /* Asegura que no haya relleno alrededor del cuerpo */
+}
 .App {
   text-align: center;
 }
@@ -72,4 +76,45 @@
 .overlay-content p {
   font-size: 1rem;
   margin-bottom: 20px;
+}
+
+
+
+/* Estilos para los servicios */
+
+.services-container {
+  background-color: #B5D0CC; /* Color de fondo específico para este bloque */
+  padding: 20px; /* Añadir relleno para un mejor espaciado */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centrando el texto y las imágenes */
+}
+
+.services-container h2 {
+  color: #333;
+}
+
+.services-container .row {
+  margin-bottom: 20px;
+}
+
+.services-container img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho de su contenedor */
+}
+
+.services-container .service-description {
+  margin-top: 10px;
+}
+
+.services-container p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.services-container .btn {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }

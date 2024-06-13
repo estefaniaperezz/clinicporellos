@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
-import './App.css'; // Asegúrate de que el archivo CSS esté importado
+import './index.css'; // Asegúrate de que el archivo CSS esté importado
+import Services from './components/Services';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <button className="btn btn-primary">Pide Cita</button>
         </div>
       </div>
+      <Services /> {'./components/Services'}
     </div>
   );
 }
