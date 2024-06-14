@@ -8,40 +8,28 @@
   text-align: center;
 }
 
-/* Estilos para la barra de navegación */
-.navbar-brand-text {
-  color: black; /* Cambia "rosa" al color que desees */
-}
-.navbar {
-  background-color: #FFE4E1; /* Rosa pastel */
-
+/* Estilos para los botones y enlaces de navegación */
+.custom-navbar {
+  background-color: #FFE4E1; /* Fondo del navbar */
 }
 
-.navbar-brand {
-  color: #ffffff !important;
+.custom-navbar-brand {
+  color: black !important; /* Color del texto del logo */
 }
 
-.nav-link {
-  color: #ffffff !important;
-}
-
-/* Estilos para los botones */
-.nav-item .nav-link {
-  background-color: #ffb6c1; /* Azul */
-  color: black !important;
+.custom-nav-link {
+  color: white !important; /* Color del texto de los enlaces */
+  background-color: #ffb6c1 !important; /* Color de fondo de los botones */
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 0 10px;
   text-decoration: none;
- 
 }
 
-.nav-item .nav-link:hover {
-  background-color: #B5D0CC; /* Azul oscuro al pasar el ratón */
+.custom-nav-link:hover {
+  background-color: #B5D0CC !important; /* Color de fondo al pasar el ratón */
 }
-
-
 
 .hero-container {
   position: relative;
