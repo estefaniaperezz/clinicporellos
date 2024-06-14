@@ -248,3 +248,13 @@
     padding: 8px 16px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .custom-navbar .ml-lg-3 {
+    margin-left: 0 !important; /* Eliminar el margen izquierdo en dispositivos pequeños */
+  }
+
+  .custom-nav-link {
+    margin-bottom: 10px; /* Ajustar el espacio inferior para dispositivos pequeños */
+  }
+}
