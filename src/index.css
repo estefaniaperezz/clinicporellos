@@ -161,6 +161,84 @@
   color: #ffE4e1; /* Cambia el color de los íconos si es necesario */
 }
 
+/* urgencias.js */
+
+.urgencias-container {
+  background-color: #FFE4E1;
+  margin-top: 70px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.horario-container {
+  background-color: #BCCCE1;
+  border-radius: 8px;
+}
+
+.telefono-urgencias {
+  background-color: #B5D0CC;
+  border-radius: 8px;
+}
+
+.h4 {
+  display: flex;
+  align-items: center;
+}
+
+.h4 .mr-2 {
+  margin-right: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+/* contacto.js */
+
+.contacto-container {
+  background-color: #FFE4E1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+}
+
+.contact-form .submit-btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Ajuste de tamaño del botón */
+  font-size: 14px; /* Ajuste de tamaño de la fuente del botón */
+  width: 200px; /* Ajuste de ancho del botón */
+  margin-left: 80px;
+  margin-right: 5opx;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
 
 @media (max-width: 768px) {

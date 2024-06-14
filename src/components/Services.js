@@ -1,5 +1,6 @@
 import React from 'react';
 import '../index.css';
+import { Link } from 'react-router-dom'; // No necesitas importar Urgencias directamente aquí
 
 function Services() {
   return (
@@ -23,7 +24,7 @@ function Services() {
         <div className="col-md-4 mb-4 text-center">
           <img src="/cirugia.png" alt="Servicio 3" className="img-fluid" />
           <div className="service-description">
-            <p>Cirugías avanzadas con el mejor equipo médico para tu mascota.</p>
+            <p>Cirugías con el mejor equipo médico para tu mascota.</p>
             <button className="btn btn-primary">Ver Más</button>
           </div>
         </div>
@@ -32,21 +33,23 @@ function Services() {
         <div className="col-md-4 mb-4 text-center">
           <img src="/urgencias.png" alt="Servicio 4" className="img-fluid" />
           <div className="service-description">
-            <p>Atención de urgencias veterinarias las 24 horas del día.</p>
-            <button className="btn btn-primary">Más información</button>
+            <p>Nuestro servicio de urgencias 24h da cobertura a aquellos casos que requieran atención inmediata.</p>
+            <Link to="/urgencias">
+              <button className="btn btn-primary">Más información</button>
+            </Link>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
           <img src="/peluqueria.png" alt="Servicio 5" className="img-fluid" />
           <div className="service-description">
-            <p>Servicios de peluquería y estética para todas las razas de mascotas.</p>
+            <p>Peluquería para Mascotas Dales a tus mascotas el cuidado y estilo que merecen.</p>
             <button className="btn btn-primary">Pide Cita</button>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
           <img src="/explotaciones.png" alt="Servicio 6" className="img-fluid" />
           <div className="service-description">
-            <p>Servicios veterinarios para explotaciones ganaderas y animales de granja.</p>
+            <p>Servicios Veterinarios para Explotaciones Ganaderas Atención especializada para el bienestar de tu ganado.</p>
             <button className="btn btn-primary">Más información</button>
           </div>
         </div>
