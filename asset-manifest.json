@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clinicporellos/static/css/main.7baa92dc.css",
+    "main.js": "/clinicporellos/static/js/main.8225d5f3.js",
+    "static/js/453.37209dd3.chunk.js": "/clinicporellos/static/js/453.37209dd3.chunk.js",
+    "index.html": "/clinicporellos/index.html",
+    "main.7baa92dc.css.map": "/clinicporellos/static/css/main.7baa92dc.css.map",
+    "main.8225d5f3.js.map": "/clinicporellos/static/js/main.8225d5f3.js.map",
+    "453.37209dd3.chunk.js.map": "/clinicporellos/static/js/453.37209dd3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7baa92dc.css",
+    "static/js/main.8225d5f3.js"
+  ]
+}
