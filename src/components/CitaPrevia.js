@@ -1,70 +1,59 @@
-import React, { useState } from 'react';
+import React from 'react'
+import '../index.css'
 
-function CitaPrevia() {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    apellidos: '',
-    nombreMascota: '',
-    email: '',
-    numero: '',
-    asuntoCita: ''
-  });
+const CitaPrevia = () => {
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar los datos del formulario
-    console.log('Formulario enviado:', formData);
-    // Puedes resetear el formulario después de enviarlo si es necesario
-    setFormData({
-      nombre: '',
-      apellidos: '',
-      nombreMascota: '',
-      email: '',
-      numero: '',
-      asuntoCita: ''
-    });
+    formData.append("access_key", "1df640a6-7992-4931-a2ed-dfcdff22c4ad");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
   };
 
   return (
-    <div className="container" style={{ backgroundColor: '#FFF4E1', padding: '20px', borderRadius: '5px', marginTop: '100px', marginBottom: '20px' }}>
-      <h2>Cita Previa</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="nombre" className="form-label">Nombre:</label>
-          <input type="text" className="form-control" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} required />
+    <section className="contacto-container">
+      <form className="contact-form" onSubmit={onSubmit}>
+        <h2 className="text-center my-4">Solicitud de cita previa</h2>
+        <div className="input-box">
+          <label className="form-label">Nombre</label>
+          <input type="text" className="form-control field" placeholder="Introduce tu nombre" name='name' required />
         </div>
-        <div className="mb-3">
-          <label htmlFor="apellidos" className="form-label">Apellidos:</label>
-          <input type="text" className="form-control" id="apellidos" name="apellidos" value={formData.apellidos} onChange={handleChange} required />
+        <div className="input-box">
+          <label className="form-label">Nombre de la mascota</label>
+          <input type="text" className="form-control field" placeholder="Introduce el nombre de la mascota" name='nombreMascota' required />
         </div>
-        <div className="mb-3">
-          <label htmlFor="nombreMascota" className="form-label">Nombre de la mascota:</label>
-          <input type="text" className="form-control" id="nombreMascota" name="nombreMascota" value={formData.nombreMascota} onChange={handleChange} required />
+        <div className="input-box">
+          <label className="form-label">Número de teléfono</label>
+          <input type="number" className="form-control field" placeholder="Introduce el número de teléfono" name='telefono' required />
         </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email:</label>
-          <input type="email" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} required />
+        <div className="input-box">
+          <label className="form-label">Email</label>
+          <input type="email" className="form-control field" placeholder="Introduce el email" name='email'  required />
         </div>
-        <div className="mb-3">
-          <label htmlFor="numero" className="form-label">Número de teléfono:</label>
-          <input type="text" className="form-control" id="numero" name="numero" value={formData.numero} onChange={handleChange} required />
+        <div className="input-box">
+          <label className="form-label">Tipo de cita que solicita</label>
+          <textarea name="Servicio que solicita" id="" className="form-control field mess" placeholder="Cuentanos en que podemos ayudarte"   required></textarea>
         </div>
-        <div className="mb-3">
-          <label htmlFor="asuntoCita" className="form-label">Asunto de la cita:</label>
-          <textarea className="form-control" id="asuntoCita" name="asuntoCita" value={formData.asuntoCita} onChange={handleChange} required></textarea>
-        </div>
-        <button type="submit" className="btn btn-primary">Enviar Cita</button>
+        <button type="submit" className="submit-btn">Solicitar cita</button>
       </form>
-    </div>
-  );
+    </section>
+  )
 }
 
 export default CitaPrevia;
