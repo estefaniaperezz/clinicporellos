@@ -23,10 +23,10 @@ function NavBar() {
           <Nav.Link as={Link} to="/contacto" className="custom-nav-link btn mb-2 mb-lg-0" onClick={handleNavCollapse}>Contacto</Nav.Link>
         </Nav>
         <Nav className="ml-lg-3 align-items-center"> {/* Ajusta la separación solo en dispositivos grandes */}
-          <Nav.Link href="#" className="custom-nav-link btn p-2">
+          <Nav.Link href="https://www.facebook.com/profile.php?id=61561717139515" className="custom-nav-link btn p-2">
             <FaFacebookSquare style={{ fontSize: '24px' }} />
           </Nav.Link>
-          <Nav.Link href="#" className="custom-nav-link btn p-2">
+          <Nav.Link href="https://www.instagram.com/cvporellos" className="custom-nav-link btn p-2">
             <FaInstagramSquare style={{ fontSize: '24px' }} />
           </Nav.Link>
         </Nav>

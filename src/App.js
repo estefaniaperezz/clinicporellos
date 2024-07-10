@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ backgroundColor: '#B5D0CC', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ backgroundColor: '#BCCCE1', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <NavBar>
           <NavLink to="/" className="nav-link" activeClassName="active" exact>Inicio</NavLink>
           <NavLink to="/servicios" className="nav-link" activeClassName="active">Nuestros Servicios</NavLink>

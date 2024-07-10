@@ -15,12 +15,17 @@
 .custom-navbar-brand {
   padding: 10px 15px; /* Ajusta el padding según sea necesario */
   background-color: rgb(0, 38, 82);
-  color: white; /* Color del texto */
   border-radius: 5px;
 }
 
+
+
+.custom-navbar-brand:hover {
+ background-color: #ffb6c1; /* Cambia el color del texto al pasar el ratón por encima */
+}
+
 .custom-nav-link {
-  color: white !important; /* Color del texto de los enlaces */
+  color:  rgb(0, 38, 82) !important; /* Color del texto de los enlaces */
   background-color: #ffb6c1 !important; /* Color de fondo de los botones */
   border: none;
   border-radius: 5px;
@@ -31,6 +36,7 @@
 
 .custom-nav-link:hover {
   background-color:  rgb(0, 38, 82) !important; /* Color de fondo al pasar el ratón */
+  color: white !important;
 }
 
 .hero-container {
@@ -51,7 +57,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: #B5D0CC; /* Fondo semi-transparente para mejorar la legibilidad */
+  background-color: #BCCCE1; /* Fondo semi-transparente para mejorar la legibilidad */
   padding: 20px;
   border-radius: 10px;
   max-width: 700px; /* Limita el ancho del cuadro */
@@ -79,7 +85,7 @@
 /* Estilos para los servicios */
 
 .services-container {
-  background-color: #B5D0CC; /* Color de fondo específico para este bloque */
+  background-color: #BCCCE1; /* Color de fondo específico para este bloque */
   padding: 20px; /* Añadir relleno para un mejor espaciado */
   border-radius: 10px; /* Bordes redondeados */
   text-align: center; /* Centrando el texto y las imágenes */
@@ -126,57 +132,85 @@
 
 /*footer*/
 .footer {
-  background-color: #B5D0CC;
-}
-.footer-container {
-  background-color: #B5D0CC;
+  background-color: #fff4e1;
+  color: white;
   padding: 20px;
+  margin-top: 70px;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info,
+.map-container {
+  flex: 1;
+  max-width: 50%;
+  padding: 10px; /* Agrega un poco de espacio interno */
+}
+
+.contact-box,
+.map-box {
+  background-color: rgb(0, 38, 82);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.map-container {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.footer-info {
+  margin-top: 20px;
   text-align: center;
-}
-
-.logo-img {
-  width: 180px; /* Ajusta el tamaño según sea necesario */
-  margin-bottom: 20px; /* Espacio entre el logo y el texto */
-}
-
-.info-container {
-  margin-bottom: 10px; /* Espacio entre el texto y los íconos sociales */
-  background-color: #B5D0CC;
+  color: rgb(0, 38, 82);
 }
 
 .social-container {
-  display: flex;
-  justify-content: flex-end; /* Alinea los íconos a la derecha */
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-  margin-top: -55px;
+  margin-top: 10px;
 }
 
 .social-container a {
-  color: #ffE4e1; /* Cambia el color de los íconos si es necesario */
+  margin-right: 10px;
+  color: #B5D0CC;
 }
 
-/* urgencias.js */
+.social-container a:hover {
+  color: #ffb6c1;
+}
+
+/* Espacio adicional entre el cuadro de información y el mapa */
+.contact-info {
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
+/* Espacio adicional entre el cuadro de información y el mapa */
+.contact-info {
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
 
 .urgencias-container {
-  background-color: #FFE4E1;
+  background-color: rgb(0, 38, 82);
   margin-top: 70px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: white;
 }
 
-.horario-container {
+.horario-container, .telefono-urgencias {
   background-color: #BCCCE1;
   border-radius: 8px;
-}
-
-.telefono-urgencias {
-  background-color: #B5D0CC;
-  border-radius: 8px;
+  color: rgb(0, 38, 82);
 }
 
 .h4 {
@@ -207,9 +241,9 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: white;
-  margin-top: 20px;
-  width: 60%; /* Ajusta el ancho del contenedor según sea necesario */
-  margin-left: 20%; /* Ajusta el margen izquierdo según sea necesario */
+  margin-top: 60px;
+  width: 50%; /* Ajusta el ancho del contenedor según sea necesario */
+  margin-left: 26%; /* Ajusta el margen izquierdo según sea necesario */
   color: #fff; /* Color del texto dentro del contenedor */
 }
 
@@ -271,9 +305,16 @@
 }
 
 @media (max-width: 768px) {
+
+  .logo {
+    max-width: 200px; /* Tamaño máximo del logo en dispositivos pequeños */
+    margin-top: 0px;
+    padding-right: 0%;
+  }
   .overlay-content {
-    padding: 10px;
-    font-size: 14px;
+   
+   padding-right: 20px;
+   max-height: 60%;
   }
 
   .overlay-content h1 {
@@ -281,14 +322,25 @@
   }
 
   .overlay-content p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .btn-primary {
     font-size: 14px;
     padding: 8px 16px;
   }
+
+  .urgencias-container {
+    padding: 15px;
+    margin-top: 50px;
+  }
+  .horario-container, .telefono-urgencias {
+    padding: 10px;
+  }
 }
+
+
+
 
 @media (max-width: 991.98px) {
   .custom-navbar .ml-lg-3 {
@@ -297,5 +349,28 @@
 
   .custom-nav-link {
     margin-bottom: 10px; /* Ajustar el espacio inferior para dispositivos pequeños */
+  }
+
+
+}
+
+
+@media (max-width: 600px) {
+  .contacto-container {
+    width: 90%; /* Ajuste el ancho del contenedor principal para dispositivos móviles */
+    max-width: none; /* Elimine el máximo ancho para ocupar el ancho completo en dispositivos pequeños */
+    margin-left: 22px;
+  }
+
+  
+}
+
+@media (max-width: 576px) {
+  .urgencias-container {
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .horario-container, .telefono-urgencias {
+    padding: 8px;
   }
 }
