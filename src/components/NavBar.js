@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <Navbar expand="lg" className="custom-navbar navbar-light" expanded={expanded}>
-      <Navbar.Brand as={Link} to="/" className="custom-navbar-brand text-dark mb-2 mb-lg-0">Clínica veterinaria Por ellos</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/" className="custom-navbar-brand text-white mb-2 mb-lg-0">Clínica veterinaria Por ellos</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" onClick={() => setExpanded(!expanded)} />
       <Navbar.Collapse id="navbarNav" className="justify-content-end">
         <Nav className="mr-auto">

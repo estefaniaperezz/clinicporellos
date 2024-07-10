@@ -12,9 +12,11 @@
 .custom-navbar {
   background-color: #FFE4E1; /* Fondo del navbar */
 }
-
 .custom-navbar-brand {
-  color: black !important; /* Color del texto del logo */
+  padding: 10px 15px; /* Ajusta el padding según sea necesario */
+  background-color: rgb(0, 38, 82);
+  color: white; /* Color del texto */
+  border-radius: 5px;
 }
 
 .custom-nav-link {
@@ -28,19 +30,20 @@
 }
 
 .custom-nav-link:hover {
-  background-color: #B5D0CC !important; /* Color de fondo al pasar el ratón */
+  background-color:  rgb(0, 38, 82) !important; /* Color de fondo al pasar el ratón */
 }
 
 .hero-container {
   position: relative;
   height: 60vh; /* Ajusta la altura al 60% de la ventana */
+  background-color: rgb(0, 38, 82);
+}
+.logo {
+  max-width: 29%;
+ margin-left: 10px;
+  margin-top: -10px;
 }
 
-.hero-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-}
 
 .overlay-content {
   position: absolute;
@@ -57,11 +60,18 @@
 .overlay-content h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: rgb(0, 71, 102);
 }
 
 .overlay-content p {
   font-size: 1rem;
   margin-bottom: 20px;
+  color: rgb(0, 71, 102);
+}
+
+.custom-btn {
+  background-color: #08426e !important; /* Cambia este color al que desees */
+  color: rgb(255, 255, 255) !important; /* Cambia el color del texto si es necesario */
 }
 
 
@@ -76,7 +86,7 @@
 }
 
 .services-container h2 {
-  color: #333;
+  color: rgb(0, 71, 102);
 }
 
 .services-container .row {
@@ -193,30 +203,62 @@
 /* contacto.js */
 
 .contacto-container {
-  background-color: #FFE4E1;
+  background-color: rgb(0, 38, 82);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: white;
   margin-top: 20px;
+  width: 60%; /* Ajusta el ancho del contenedor según sea necesario */
+  margin-left: 20%; /* Ajusta el margen izquierdo según sea necesario */
+  color: #fff; /* Color del texto dentro del contenedor */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  margin-bottom: 20px; /* Espacio entre cada caja de entrada */
+}
+
+.input-box:last-child {
+  margin-bottom: 30px; /* Más espacio antes del botón de envío */
 }
 
 .contact-form .form-label {
   font-weight: bold;
+  margin-bottom: 5px; /* Espacio bajo las etiquetas */
+  color: #fff; /* Color del texto de las etiquetas */
 }
 
 .contact-form .form-control {
   border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Borde de las cajas de entrada */
+  background-color: #fff; /* Color de fondo de las cajas de entrada */
+  color: #000; /* Color del texto dentro de las cajas de entrada */
+}
+
+.contact-form .mess {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Borde del área de texto */
+  background-color: #fff; /* Color de fondo del área de texto */
+  color: #000; /* Color del texto dentro del área de texto */
+  min-height: 100px; /* Altura mínima del área de texto */
 }
 
 .contact-form .submit-btn {
-  background-color: #007bff;
+  background-color: #ffb6c1;
   border: none;
   border-radius: 5px;
   padding: 10px 20px; /* Ajuste de tamaño del botón */
   font-size: 14px; /* Ajuste de tamaño de la fuente del botón */
   width: 200px; /* Ajuste de ancho del botón */
-  margin-left: 80px;
-  margin-right: 5opx;
+  margin-left: 0; /* Ajuste del margen izquierdo del botón */
+  align-self: center; /* Centrar el botón horizontalmente */
+  color: #000; /* Color del texto del botón */
 }
 
 .text-center {
@@ -227,11 +269,6 @@
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.submit-btn {
-  margin-top: 20px;
-  text-align: center;
-}
-
 
 @media (max-width: 768px) {
   .overlay-content {
