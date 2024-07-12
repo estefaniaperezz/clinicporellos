@@ -35,7 +35,10 @@ const CitaPrevia = () => {
         <form className="contact-form" onSubmit={onSubmit}>
           <h2 className="text-center my-4">Solicitud de cita previa</h2>
           <div className="input-box">
-            <label className="form-label">Nombre</label>
+          <label className="form-label">Para citas de peluqueria pulse aqui</label>
+          <br></br>  
+          <br></br>  
+             <label className="form-label">Nombre</label>
             <input type="text" className="form-control field" placeholder="Introduce tu nombre" name='name' required />
           </div>
           <div className="input-box">
@@ -58,7 +61,7 @@ const CitaPrevia = () => {
         </form>
       ) : (
         <div className="message-container">
-          <h3 className="text-center my-4">Su solicitud se ha realizado correctamente, Nos pondremos en contacto lo antes posible, ¡gracias!</h3>
+          <h3 className="text-center my-4">Su solicitud se ha realizado correctamente.<br></br> Nos pondremos en contacto lo antes posible, ¡gracias!</h3>
           
         </div>
       )}

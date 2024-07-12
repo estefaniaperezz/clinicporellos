@@ -10,7 +10,7 @@ function Footer() {
           <h4>Contacto</h4>
           <p>Teléfono: +34 123 456 789</p>
           <p>Email: cvporellos@gmail.com</p>
-          <p>Dirección: <a href="https://maps.app.goo.gl/NaTMS1sSqUXC5k9t6" target="_blank" rel="noopener noreferrer">C. José Zorrilla, 05400 Arenas de San Pedro, Ávila</a></p>
+          <p>Dirección: <a href="https://maps.app.goo.gl/NaTMS1sSqUXC5k9t6" target="_blank" rel="noopener noreferrer">C. José Zorrilla, nº2, 05400 Arenas de San Pedro, Ávila</a></p>
           <div className="social-container">
             <a href="https://www.facebook.com/tu_facebook"><FaFacebookSquare style={{ fontSize: '40px' }} /></a>
             <a href="https://www.instagram.com/tu_instagram"><FaInstagramSquare style={{ fontSize: '40px' }} /></a>

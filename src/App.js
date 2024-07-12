@@ -28,7 +28,9 @@ function App() {
       <div className="overlay-content text-center">
         <h1>Clínica Veterinaria Por Ellos</h1>
         <p>Bienvenidos a Clínica Veterinaria Por Ellos, donde el bienestar de tu mascota es nuestra misión. Cada mascota que atendemos es tratada con la dedicación y el cariño que se merece. Reserva tu cita aquí y confía en nuestro equipo para mantener a tu mascota sana y feliz. Tu tranquilidad es nuestra prioridad.</p>
-        <Link to="/cita-previa" className="btn btn-primary custom-btn">Pide Cita</Link>
+        <Link to="/cita-previa" className="btn btn-primary custom-btn">Pide cita online</Link>
+      
+        <Link to="/footer.js" className="btn btn-secondary custom-btn">Cita telefónica</Link>
 
                   </div>
                 </div>
