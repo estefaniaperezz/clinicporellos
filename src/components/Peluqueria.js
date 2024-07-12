@@ -5,6 +5,7 @@ const Peluqueria = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [razaSeleccionada, setRazaSeleccionada] = useState('Raza sin especificar');
   const [mostrarCamposAdicionales, setMostrarCamposAdicionales] = useState(razaSeleccionada === 'Raza sin especificar');
+  const [mostrarExtras, setMostrarExtras] = useState(false);
 
   useEffect(() => {
     // Verificar si se seleccionó "Raza sin especificar" al cargar la página o cuando cambia
@@ -14,7 +15,7 @@ const Peluqueria = () => {
       setMostrarCamposAdicionales(false);
     }
   }, [razaSeleccionada]); // Se ejecuta cada vez que razaSeleccionada cambia
-  
+
   // Agregar un useEffect adicional para asegurar que se ejecute al montar el componente
   useEffect(() => {
     // Verificar al montar el componente
@@ -24,6 +25,7 @@ const Peluqueria = () => {
       setMostrarCamposAdicionales(false);
     }
   }, []); // Se ejecuta solo una vez al montar el componente
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -59,41 +61,41 @@ const Peluqueria = () => {
     }
   };
 
+  const handleExtrasChange = (event) => {
+    setMostrarExtras(event.target.checked);
+  };
+
   const dogBreeds = [
-    "Raza sin especificar", "Affenpinscher", "Afghan Hound", "Airedale Terrier", "Akita", "Alaskan Malamute", "American Bulldog", 
-    "American Pit Bull Terrier", "American Staffordshire Terrier", "Australian Cattle Dog", "Australian Shepherd", "Australian Terrier", 
-    "Basenji", "Basset Hound", "Beagle", "Bearded Collie", "Belgian Malinois", "Belgian Sheepdog", "Belgian Tervuren", "Bernese Mountain Dog", 
-    "Bichon Frise", "Black and Tan Coonhound", "Bloodhound", "Border Collie", "Border Terrier", "Borzoi", "Boston Terrier", "Bouvier des Flandres", 
-    "Boxer", "Boykin Spaniel", "Briard", "Brittany", "Brussels Griffon", "Bull Terrier", "Bulldog", "Bullmastiff", "Cairn Terrier", 
-    "Canaan Dog", "Cane Corso", "Cardigan Welsh Corgi", "Cavalier King Charles Spaniel", "Chesapeake Bay Retriever", "Chihuahua", 
-    "Chinese Crested", "Chinese Shar-Pei", "Chow Chow", "Clumber Spaniel", "Cocker Spaniel", "Collie", "Coton de Tulear", 
-    "Dachshund", "Dalmatian", "Dandie Dinmont Terrier", "Doberman Pinscher", "Dogue de Bordeaux", "English Cocker Spaniel", 
-    "English Setter", "English Springer Spaniel", "English Toy Spaniel", "Entlebucher Mountain Dog", "Field Spaniel", "Finnish Spitz", 
-    "Flat-Coated Retriever", "French Bulldog", "German Pinscher", "German Shepherd", "German Shorthaired Pointer", 
-    "German Wirehaired Pointer", "Giant Schnauzer", "Glen of Imaal Terrier", "Golden Retriever", "Gordon Setter", 
-    "Great Dane", "Great Pyrenees", "Greater Swiss Mountain Dog", "Greyhound", "Harrier", "Havanese", "Ibizan Hound", "Icelandic Sheepdog", 
-    "Irish Red and White Setter", "Irish Setter", "Irish Terrier", "Irish Water Spaniel", "Irish Wolfhound", "Italian Greyhound", 
-    "Japanese Chin", "Keeshond", "Kerry Blue Terrier", "Komondor", "Kuvasz", "Labrador Retriever", "Lagotto Romagnolo", "Lakeland Terrier", 
-    "Leonberger", "Lhasa Apso", "Lowchen", "Maltese", "Manchester Terrier", "Mastiff", "Miniature Bull Terrier", "Miniature Pinscher", 
-    "Miniature Schnauzer", "Neapolitan Mastiff", "Newfoundland", "Norfolk Terrier", "Norwegian Buhund", "Norwegian Elkhound", 
-    "Norwegian Lundehund", "Norwich Terrier", "Nova Scotia Duck Tolling Retriever", "Old English Sheepdog", "Otterhound", 
-    "Papillon", "Pekingese", "Pembroke Welsh Corgi", "Petit Basset Griffon Vendeen", "Pharaoh Hound", "Plott", "Pointer", 
-    "Polish Lowland Sheepdog", "Pomeranian", "Poodle", "Portuguese Water Dog", "Pug", "Puli", "Pyrenean Shepherd", 
-    "Rat Terrier", "Redbone Coonhound", "Rhodesian Ridgeback", "Rottweiler", "Saint Bernard", "Saluki", "Samoyed", 
-    "Schipperke", "Scottish Deerhound", "Scottish Terrier", "Sealyham Terrier", "Shetland Sheepdog", "Shiba Inu", 
-    "Shih Tzu", "Siberian Husky", "Silky Terrier", "Skye Terrier", "Sloughi", "Soft Coated Wheaten Terrier", "Spanish Water Dog", 
-    "Spinone Italiano", "Staffordshire Bull Terrier", "Standard Schnauzer", "Sussex Spaniel", "Swedish Vallhund", "Tibetan Mastiff", 
-    "Tibetan Spaniel", "Tibetan Terrier", "Toy Fox Terrier", "Treeing Walker Coonhound", "Vizsla", "Weimaraner", "Welsh Springer Spaniel", 
+    "Raza sin especificar", "Affenpinscher", "Afghan Hound", "Airedale Terrier", "Akita", "Alaskan Malamute", "American Bulldog",
+    "American Pit Bull Terrier", "American Staffordshire Terrier", "Australian Cattle Dog", "Australian Shepherd", "Australian Terrier",
+    "Basenji", "Basset Hound", "Beagle", "Bearded Collie", "Belgian Malinois", "Belgian Sheepdog", "Belgian Tervuren", "Bernese Mountain Dog",
+    "Bichon Frise", "Black and Tan Coonhound", "Bloodhound", "Border Collie", "Border Terrier", "Borzoi", "Boston Terrier", "Bouvier des Flandres",
+    "Boxer", "Boykin Spaniel", "Briard", "Brittany", "Brussels Griffon", "Bull Terrier", "Bulldog", "Bullmastiff", "Cairn Terrier",
+    "Canaan Dog", "Cane Corso", "Cardigan Welsh Corgi", "Cavalier King Charles Spaniel", "Chesapeake Bay Retriever", "Chihuahua",
+    "Chinese Crested", "Chinese Shar-Pei", "Chow Chow", "Clumber Spaniel", "Cocker Spaniel", "Collie", "Coton de Tulear",
+    "Dachshund", "Dalmatian", "Dandie Dinmont Terrier", "Doberman Pinscher", "Dogue de Bordeaux", "English Cocker Spaniel",
+    "English Setter", "English Springer Spaniel", "English Toy Spaniel", "Entlebucher Mountain Dog", "Field Spaniel", "Finnish Spitz",
+    "Flat-Coated Retriever", "French Bulldog", "German Pinscher", "German Shepherd", "German Shorthaired Pointer",
+    "German Wirehaired Pointer", "Giant Schnauzer", "Glen of Imaal Terrier", "Golden Retriever", "Gordon Setter",
+    "Great Dane", "Great Pyrenees", "Greater Swiss Mountain Dog", "Greyhound", "Harrier", "Havanese", "Ibizan Hound", "Icelandic Sheepdog",
+    "Irish Red and White Setter", "Irish Setter", "Irish Terrier", "Irish Water Spaniel", "Irish Wolfhound", "Italian Greyhound",
+    "Japanese Chin", "Keeshond", "Kerry Blue Terrier", "Komondor", "Kuvasz", "Labrador Retriever", "Lagotto Romagnolo", "Lakeland Terrier",
+    "Leonberger", "Lhasa Apso", "Lowchen", "Maltese", "Manchester Terrier", "Mastiff", "Miniature Bull Terrier", "Miniature Pinscher",
+    "Miniature Schnauzer", "Neapolitan Mastiff", "Newfoundland", "Norfolk Terrier", "Norwegian Buhund", "Norwegian Elkhound",
+    "Norwegian Lundehund", "Norwich Terrier", "Nova Scotia Duck Tolling Retriever", "Old English Sheepdog", "Otterhound",
+    "Papillon", "Pekingese", "Pembroke Welsh Corgi", "Petit Basset Griffon Vendeen", "Pharaoh Hound", "Plott", "Pointer",
+    "Polish Lowland Sheepdog", "Pomeranian", "Poodle", "Portuguese Water Dog", "Pug", "Puli", "Pyrenean Shepherd",
+    "Rat Terrier", "Redbone Coonhound", "Rhodesian Ridgeback", "Rottweiler", "Saint Bernard", "Saluki", "Samoyed",
+    "Schipperke", "Scottish Deerhound", "Scottish Terrier", "Sealyham Terrier", "Shetland Sheepdog", "Shiba Inu",
+    "Shih Tzu", "Siberian Husky", "Silky Terrier", "Skye Terrier", "Sloughi", "Soft Coated Wheaten Terrier", "Spanish Water Dog",
+    "Spinone Italiano", "Staffordshire Bull Terrier", "Standard Schnauzer", "Sussex Spaniel", "Swedish Vallhund", "Tibetan Mastiff",
+    "Tibetan Spaniel", "Tibetan Terrier", "Toy Fox Terrier", "Treeing Walker Coonhound", "Vizsla", "Weimaraner", "Welsh Springer Spaniel",
     "Welsh Terrier", "West Highland White Terrier", "Whippet", "Wirehaired Pointing Griffon", "Xoloitzcuintli", "Yorkshire Terrier"
   ];
 
-
   const services = [
-    "Lavado y secado", "Corte de pelo con lavado", "Solo corte de pelo", "Desenredado", "Tratamiento antipulgas", "Baño medicado"
+    "Baño", "Baño + corte a tijeras", "Baño + corte a máquina", "Baño + corte combinado a máquina y tijeras"
   ];
-
-  
-
 
   return (
     <section className="peluqueria-container">
@@ -154,6 +156,22 @@ const Peluqueria = () => {
                 ))}
               </select>
             </div>
+            <div className="input-box-peluqueria">
+              <label className="form-label-peluqueria">Extras</label>
+              <input type="checkbox" name="extras" className="form-control-peluqueria field-peluqueria" onChange={handleExtrasChange} />
+            </div>
+            {mostrarExtras && (
+              <>
+                <div className="input-box-peluqueria">
+                  <label className="form-label-peluqueria">Seleccione extra</label>
+                  <select name="extra" className="form-control-peluqueria field-peluqueria" required>
+                    <option value="" disabled selected>Selecciona un extra</option>
+                    <option value="Cepillado">Cepillado</option>
+                    <option value="Deslanado">Deslanado</option>
+                  </select>
+                </div>
+              </>
+            )}
             <div className="input-box-peluqueria">
               <label className="form-label-peluqueria">Mensaje</label>
               <textarea name="mensaje" className="form-control-peluqueria field-peluqueria mess-peluqueria" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
