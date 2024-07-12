@@ -6,7 +6,7 @@ import Services from './components/Services';
 import OurTeam from './components/OurTeam';
 import CitaPrevia from './components/CitaPrevia';
 import Urgencias from './components/Urgencias';
-import Contacto from './components/Contacto';
+import Peluqueria from './components/Peluqueria';
 import Footer from './components/Footer';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function App() {
         <NavBar>
           <NavLink to="/" className="nav-link" activeClassName="active" exact>Inicio</NavLink>
           <NavLink to="/servicios" className="nav-link" activeClassName="active">Nuestros Servicios</NavLink>
-          <NavLink to="/contacto" className="nav-link" activeClassName="active">Contacto</NavLink>
+          <NavLink to="/Peluqueria" className="nav-link" activeClassName="active">Peluquería</NavLink>
         </NavBar>
         <div style={{ flex: '1' }}>
           <Routes>
@@ -41,7 +41,7 @@ function App() {
             <Route path="/servicios" element={<Services />} />
             <Route path="/cita-previa" element={<CitaPrevia />} />
             <Route path="/urgencias" element={<Urgencias />} />
-            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/Peluqueria" element={<Peluqueria />} />
           </Routes>
         </div>
         <Footer />

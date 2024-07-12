@@ -312,6 +312,97 @@
   margin-bottom: 1.5rem;
 }
 
+
+/* Peluqueria.js */
+
+.peluqueria-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffb6c1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+/* Estilos para el formulario de la peluquería */
+.peluqueria-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para los campos del formulario */
+.input-box-peluqueria {
+  margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas de los campos */
+.form-label-peluqueria {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada */
+.form-control-peluqueria {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para el campo de mensaje */
+.mess-peluqueria {
+  height: 100px; /* Ajustar según sea necesario */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilos para el botón de enviar */
+.submit-btn-peluqueria {
+  background-color: rgb(0, 38, 82);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.submit-btn-peluqueria:hover {
+  background-color: rgb(0, 71, 102);
+}
+
+/* Estilos para la sección de mensaje de confirmación */
+.message-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos generales */
+.text-center {
+  text-align: center;
+}
+
+.my-4 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.intro h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.5;
+}
 @media (max-width: 768px) {
 
   .logo {
