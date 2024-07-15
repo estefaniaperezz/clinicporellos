@@ -20,7 +20,7 @@ function Urgencias() {
       </div>
       <div className="telefono-urgencias mt-4 p-3">
         <h4><FaPhoneAlt className="mr-2" />Teléfono de Urgencias</h4>
-        <p>+34 123 456 789</p>
+        <p>+34 623 572 928</p>
       </div>
     </div>
   );

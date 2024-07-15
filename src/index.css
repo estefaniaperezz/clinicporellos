@@ -152,6 +152,9 @@
   align-items: flex-start;
 }
 
+h4 {
+ padding-bottom: 20px;
+}
 .contact-info,
 .map-container {
   flex: 1;
@@ -167,15 +170,18 @@
 }
 
 .map-container {
+  width: 100%; /* Ajusta el ancho del contenedor al 100% del espacio disponible */
+  height: 300px; /* Establece una altura fija o ajusta según tus necesidades */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0px; /* Ajusta el margen superior según sea necesario */
 }
 
 .map-container iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
+  width: 100%; /* Aprovecha todo el ancho del contenedor */
+  height: 100%; /* Aprovecha toda la altura del contenedor */
+  border-radius: 8px; /* Borde redondeado opcional */
 }
 
 .footer-info {
@@ -185,7 +191,7 @@
 }
 
 .social-container {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .social-container a {
@@ -374,6 +380,38 @@
   background-color: rgb(0, 71, 102);
 }
 
+.social-icons {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(0, 38, 82);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.social-icons h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffb6c1;
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #ffb6c1;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #BCCCE1;
+}
 /* Estilos para la sección de mensaje de confirmación */
 .message-container {
   text-align: center;
@@ -448,13 +486,17 @@
 
 
 
-@media (max-width: 991.98px) {
-  .custom-navbar .ml-lg-3 {
-    margin-left: 0 !important; /* Eliminar el margen izquierdo en dispositivos pequeños */
-  }
+@media (min-width: 991.98px) {
+  
 
-  .custom-nav-link {
-    margin-bottom: 10px; /* Ajustar el espacio inferior para dispositivos pequeños */
+  .social-icons {
+    position: absolute;
+    top: calc(60px + 10px); /* Adjust according to your navigation bar height + some padding */
+    right: 10px;
+    transform: none;
+    flex-direction: row;
+    gap: 5px;
+    width: 30%;
   }
 
 
@@ -467,6 +509,7 @@
     max-width: none; /* Elimine el máximo ancho para ocupar el ancho completo en dispositivos pequeños */
     margin-left: 22px;
   }
+  
 
   
 }
@@ -480,3 +523,14 @@
     padding: 8px;
   }
 }
+
+@media (max-width: 768px) {
+  .social-icons {
+    position: absolute;
+    top: calc(60px + 10px); /* Adjust according to your navigation bar height + some padding */
+    right: 10px;
+    transform: none;
+    flex-direction: row;
+    gap: 5px;
+  }
+ }

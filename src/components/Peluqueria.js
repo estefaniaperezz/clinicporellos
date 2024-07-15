@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
 import '../index.css';
 
 const Peluqueria = () => {
@@ -8,46 +9,55 @@ const Peluqueria = () => {
   const [mostrarExtras, setMostrarExtras] = useState(false);
 
   useEffect(() => {
-    // Verificar si se seleccionó "Raza sin especificar" al cargar la página o cuando cambia
     if (razaSeleccionada === 'Raza sin especificar') {
       setMostrarCamposAdicionales(true);
     } else {
       setMostrarCamposAdicionales(false);
     }
-  }, [razaSeleccionada]); // Se ejecuta cada vez que razaSeleccionada cambia
+  }, [razaSeleccionada]);
 
-  // Agregar un useEffect adicional para asegurar que se ejecute al montar el componente
   useEffect(() => {
-    // Verificar al montar el componente
     if (razaSeleccionada === 'Raza sin especificar') {
       setMostrarCamposAdicionales(true);
     } else {
       setMostrarCamposAdicionales(false);
     }
-  }, []); // Se ejecuta solo una vez al montar el componente
+  }, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "your_new_access_key_here");
+    formData.append("access_key", "400cb5a6-a45b-485a-81c0-ffa9baaee32f");
+    console.log("Form Data:", formData);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+    console.log("JSON Payload:", json);
 
-    if (res.success) {
-      console.log("Success", res);
-      setFormSubmitted(true);
-      event.target.reset();
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      });
+
+      const resJson = await res.json();
+      console.log("Response:", resJson);
+
+      if (resJson.success) {
+        console.log("Success", resJson);
+        setFormSubmitted(true);
+        event.target.reset();
+      } else {
+        console.log("Error", resJson);
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
     }
   };
 
@@ -97,12 +107,52 @@ const Peluqueria = () => {
     "Baño", "Baño + corte a tijeras", "Baño + corte a máquina", "Baño + corte combinado a máquina y tijeras"
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.querySelector('footer');
+      const socialIcons = document.querySelector('.social-icons');
+      const footerRect = footer.getBoundingClientRect();
+      const socialIconsRect = socialIcons.getBoundingClientRect();
+  
+      if (window.innerWidth > 768) {
+        socialIcons.style.position = 'fixed';
+        socialIcons.style.top = '50%';
+        socialIcons.style.transform = 'translateY(-50%)';
+        socialIcons.style.bottom = 'auto';
+      } else {
+        socialIcons.style.position = 'absolute';
+        socialIcons.style.top = 'calc(60px + 10px)'; // Ajusta según la altura de tu barra de navegación
+        socialIcons.style.right = '10px';
+        socialIcons.style.transform = 'none';
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll); // Para manejar cambios de tamaño de ventana
+    handleScroll(); // Para establecer la posición inicial
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, []);
+
   return (
     <section className="peluqueria-container">
+      <div className="social-icons">
+        <h4>¡Síguenos en nuestras redes!</h4>
+        <a href="https://www.instagram.com/pelucan_porellos/" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <FaInstagram />
+        </a>
+        <a href="https://www.tiktok.com/@pelucan_porellos" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <FaTiktok />
+        </a>
+      </div>
+
       {!formSubmitted ? (
         <>
-          <div className="intro">
-            <h1>Bienvenido a nuestra Peluquería Canina</h1>
+        <div className="intro">
+          <h1>Bienvenido a nuestra Peluquería Canina</h1>
             <p>En nuestra peluquería canina, nos especializamos en brindar el mejor cuidado y atención a su mascota. Desde un simple lavado y secado hasta cortes de pelo especializados, estamos aquí para ayudar a que su mascota luzca y se sienta lo mejor posible.</p>
           </div>
           <form className="peluqueria-form" onSubmit={onSubmit}>

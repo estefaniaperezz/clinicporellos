@@ -22,7 +22,7 @@ function OurTeam() {
         </div>
         <div className="col-md-3 mb-4 text-center">
           <img src="/veterinario4.jpg" alt="Persona 4" className="img-fluid rounded-circle mb-3 team-member-img" style={{ width: '400px', height: '250px' }} />
-          <p className="fw-bold">Lolita Martínez</p>
+          <p className="fw-bold">Eva Martínez</p>
           <p className="text-muted">Peluquera</p>
         </div>
       </div>
