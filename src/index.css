@@ -10,7 +10,7 @@
 
 /* Estilos para los botones y enlaces de navegación */
 .custom-navbar {
-  background-color: #FFE4E1; /* Fondo del navbar */
+  background-color: #FFE4E1;
 }
 .custom-navbar-brand {
   padding: 10px 15px; /* Ajusta el padding según sea necesario */
@@ -321,11 +321,39 @@ h4 {
 
 /* Peluqueria.js */
 
+.social-icons {
+  text-align: center; /* Centra los íconos horizontalmente */
+  margin-top: 20px; /* Espacio superior respecto al título */
+  margin-bottom: 20px; /* Espacio inferior respecto al formulario */
+  padding-top: 10px; /* Espacio interior superior */
+  padding-bottom: 10px; /* Espacio interior inferior */
+  background-color: rgb(0, 38, 82);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons h4 {
+  margin-bottom: 10px; /* Espacio inferior respecto al título */
+  font-size: 1.2rem;
+  color: #ffb6c1;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #ffb6c1;
+  transition: color 0.3s;
+  margin: 0 5px; /* Espacio horizontal entre los íconos */
+}
+
+.social-icon:hover {
+  color: #bccce1;
+}
+
 .peluqueria-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffb6c1;
+  background-color: #94c6dc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
@@ -335,6 +363,7 @@ h4 {
 .peluqueria-form {
   display: flex;
   flex-direction: column;
+  margin-top: 20px; /* Espacio entre redes sociales y formulario */
 }
 
 /* Estilos para los campos del formulario */
@@ -379,39 +408,6 @@ h4 {
 .submit-btn-peluqueria:hover {
   background-color: rgb(0, 71, 102);
 }
-
-.social-icons {
-  position: fixed;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  background-color: rgb(0, 38, 82);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it's above other content */
-}
-
-.social-icons h4 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #ffb6c1;
-  text-align: center;
-}
-
-.social-icon {
-  font-size: 2rem;
-  color: #ffb6c1;
-  transition: color 0.3s;
-}
-
-.social-icon:hover {
-  color: #BCCCE1;
-}
 /* Estilos para la sección de mensaje de confirmación */
 .message-container {
   text-align: center;
@@ -435,7 +431,7 @@ h4 {
 .intro h1 {
   font-size: 24px;
   margin-bottom: 10px;
-  padding-left: 60px;
+  padding-left: 90px;
 }
 
 .intro p {
@@ -481,56 +477,34 @@ h4 {
   .horario-container, .telefono-urgencias {
     padding: 10px;
   }
-}
-
-
-
-
-@media (min-width: 991.98px) {
   
 
-  .social-icons {
-    position: absolute;
-    top: calc(60px + 10px); /* Adjust according to your navigation bar height + some padding */
-    right: 10px;
-    transform: none;
-    flex-direction: row;
-    gap: 5px;
-    width: 30%;
-  }
-
-
-}
-
-
-@media (max-width: 600px) {
   .contacto-container {
     width: 90%; /* Ajuste el ancho del contenedor principal para dispositivos móviles */
     max-width: none; /* Elimine el máximo ancho para ocupar el ancho completo en dispositivos pequeños */
     margin-left: 22px;
   }
-  
 
+  .intro h1 {
   
-}
-
-@media (max-width: 576px) {
-  .urgencias-container {
-    padding: 10px;
-    margin-top: 30px;
+    padding-left: 25px;
   }
-  .horario-container, .telefono-urgencias {
-    padding: 8px;
+
+  .submit-btn-peluqueria {
+    width: 40%;
+    margin-left: 30%;
   }
 }
 
-@media (max-width: 768px) {
-  .social-icons {
-    position: absolute;
-    top: calc(60px + 10px); /* Adjust according to your navigation bar height + some padding */
-    right: 10px;
-    transform: none;
-    flex-direction: row;
-    gap: 5px;
-  }
- }
+
+
+
+  
+
+  
+
+
+
+
+
+

@@ -107,53 +107,24 @@ const Peluqueria = () => {
     "Baño", "Baño + corte a tijeras", "Baño + corte a máquina", "Baño + corte combinado a máquina y tijeras"
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const footer = document.querySelector('footer');
-      const socialIcons = document.querySelector('.social-icons');
-      const footerRect = footer.getBoundingClientRect();
-      const socialIconsRect = socialIcons.getBoundingClientRect();
-  
-      if (window.innerWidth > 768) {
-        socialIcons.style.position = 'fixed';
-        socialIcons.style.top = '50%';
-        socialIcons.style.transform = 'translateY(-50%)';
-        socialIcons.style.bottom = 'auto';
-      } else {
-        socialIcons.style.position = 'absolute';
-        socialIcons.style.top = 'calc(60px + 10px)'; // Ajusta según la altura de tu barra de navegación
-        socialIcons.style.right = '10px';
-        socialIcons.style.transform = 'none';
-      }
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll); // Para manejar cambios de tamaño de ventana
-    handleScroll(); // Para establecer la posición inicial
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
-    };
-  }, []);
+
 
   return (
     <section className="peluqueria-container">
-      <div className="social-icons">
-        <h4>¡Síguenos en nuestras redes!</h4>
-        <a href="https://www.instagram.com/pelucan_porellos/" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <FaInstagram />
-        </a>
-        <a href="https://www.tiktok.com/@pelucan_porellos" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <FaTiktok />
-        </a>
-      </div>
-
       {!formSubmitted ? (
         <>
-        <div className="intro">
-          <h1>Bienvenido a nuestra Peluquería Canina</h1>
-            <p>En nuestra peluquería canina, nos especializamos en brindar el mejor cuidado y atención a su mascota. Desde un simple lavado y secado hasta cortes de pelo especializados, estamos aquí para ayudar a que su mascota luzca y se sienta lo mejor posible.</p>
+          <div className="intro">
+            <h1>Bienvenido a nuestra Peluquería</h1>
+            <p>En nuestra peluquería nos especializamos en hacer que tu mascota luzca y se sienta increíble. En todos nuestros servicios ofrecemos un masaje relajante, corte de uñas, limpieza de oídos  y un toque final con perfume. Confía en nosotros para cuidar a tu mejor amigo con amor y profesionalismo.</p>
+          </div>
+          <div className="social-icons">
+            <h4>¡Síguenos en nuestras redes!</h4>
+            <a href="https://www.instagram.com/pelucan_porellos/" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaInstagram />
+            </a>
+            <a href="https://www.tiktok.com/@pelucan_porellos" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaTiktok />
+            </a>
           </div>
           <form className="peluqueria-form" onSubmit={onSubmit}>
             <div className="input-box-peluqueria">
@@ -175,6 +146,7 @@ const Peluqueria = () => {
             <div className="input-box-peluqueria">
               <label className="form-label-peluqueria">Raza del perro</label>
               <select name="raza" className="form-control-peluqueria field-peluqueria" onChange={handleRazaChange} value={razaSeleccionada} required>
+                <option value="" disabled>Selecciona la raza del perro</option>
                 {dogBreeds.map((breed, index) => (
                   <option key={index} value={breed}>{breed}</option>
                 ))}
@@ -189,7 +161,7 @@ const Peluqueria = () => {
                 <div className="input-box-peluqueria">
                   <label className="form-label-peluqueria">Tipo de pelaje</label>
                   <select name="tipoPelaje" className="form-control-peluqueria field-peluqueria" required>
-                    <option value="" disabled selected>Selecciona el tipo de pelaje</option>
+                    <option value="" disabled>Selecciona el tipo de pelaje</option>
                     <option value="Corto">Corto</option>
                     <option value="Medio">Medio</option>
                     <option value="Largo">Largo</option>
@@ -200,7 +172,7 @@ const Peluqueria = () => {
             <div className="input-box-peluqueria">
               <label className="form-label-peluqueria">Tipo de servicio</label>
               <select name="servicio" className="form-control-peluqueria field-peluqueria" required>
-                <option value="" disabled selected>Selecciona el servicio</option>
+                <option value="" disabled>Selecciona el servicio</option>
                 {services.map((service, index) => (
                   <option key={index} value={service}>{service}</option>
                 ))}
@@ -215,7 +187,7 @@ const Peluqueria = () => {
                 <div className="input-box-peluqueria">
                   <label className="form-label-peluqueria">Seleccione extra</label>
                   <select name="extra" className="form-control-peluqueria field-peluqueria" required>
-                    <option value="" disabled selected>Selecciona un extra</option>
+                    <option value="" disabled>Selecciona un extra</option>
                     <option value="Cepillado">Cepillado</option>
                     <option value="Deslanado">Deslanado</option>
                   </select>
