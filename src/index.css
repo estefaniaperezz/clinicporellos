@@ -108,7 +108,7 @@
 }
 
 .services-container h2 {
-  color: rgb(0, 71, 102);
+  color: rgb(0, 38, 82);
 }
 
 .services-container .row {
@@ -135,8 +135,14 @@
 .services-container .btn {
   margin-top: 10px;
   font-size: 0.9rem;
+  background-color: rgb(0, 38, 82);
 
 }
+
+.services-container .btn:hover {
+  background-color: #ffb6c1;
+}
+
  /*our team */
 
 .team-member-img {
@@ -460,26 +466,19 @@ h4 {
   .overlay-content {
    
    padding-right: 20px;
-   max-height: 60%;
+   max-height: 100%;
   }
 
   .overlay-content h1 {
     font-size: 24px;
+    padding-top: 0px;
   }
 
   .overlay-content p {
     font-size: 13px;
   }
 
-  .btn-primary {
-    font-size: 16px;
-    margin-top: 35px;
-    
-  }
-  .btn-secondary {
-    font-size: 16px;
-   
-  }
+  
 
   .urgencias-container {
     padding: 15px;

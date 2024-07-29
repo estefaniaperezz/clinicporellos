@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import { Link } from 'react-router-dom'; // No necesitas importar Urgencias directamente aquí
+import { Link } from 'react-router-dom';
 
 function Services() {
   return (
@@ -49,7 +49,6 @@ function Services() {
           <img src="/explotaciones.png" alt="Servicio 6" className="img-fluid" />
           <div className="service-description">
             <p>Servicios Veterinarios para Explotaciones Ganaderas Atención especializada para el bienestar de tu ganado.</p>
-            <button className="btn btn-primary">Más información</button>
           </div>
         </div>
       </div>
