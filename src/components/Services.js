@@ -11,21 +11,18 @@ function Services() {
           <img src="/consultas.png" alt="Servicio 1" className="img-fluid" />
           <div className="service-description">
             <p>Consultas generales y especializadas para el cuidado de tu mascota.</p>
-            <button className="btn btn-primary">Ver Más</button>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
           <img src="/prevencion.png" alt="Servicio 2" className="img-fluid" />
           <div className="service-description">
             <p>Programas de prevención y vacunas para mantener a tu mascota sana.</p>
-            <button className="btn btn-primary">Ver Más</button>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
           <img src="/cirugia.png" alt="Servicio 3" className="img-fluid" />
           <div className="service-description">
             <p>Cirugías con el mejor equipo médico para tu mascota.</p>
-            <button className="btn btn-primary">Ver Más</button>
           </div>
         </div>
       </div>
@@ -43,7 +40,9 @@ function Services() {
           <img src="/peluqueria.png" alt="Servicio 5" className="img-fluid" />
           <div className="service-description">
             <p>Peluquería para Mascotas Dales a tus mascotas el cuidado y estilo que merecen.</p>
+            <Link to="/Peluqueria">
             <button className="btn btn-primary">Pide Cita</button>
+            </Link>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
