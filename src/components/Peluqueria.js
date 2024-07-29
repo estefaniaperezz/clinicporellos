@@ -16,14 +16,6 @@ const Peluqueria = () => {
     }
   }, [razaSeleccionada]);
 
-  useEffect(() => {
-    if (razaSeleccionada === 'Raza sin especificar') {
-      setMostrarCamposAdicionales(true);
-    } else {
-      setMostrarCamposAdicionales(false);
-    }
-  }, []);
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+BE+WAL:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 /* Estilos generales de la aplicación */
 
   body {
@@ -8,15 +8,23 @@
   text-align: center;
 }
 
+
+
 /* Estilos para los botones y enlaces de navegación */
 .custom-navbar {
   background-color: #FFE4E1;
+  margin-left: 0px;
 }
 .custom-navbar-brand {
   padding: 10px 15px; /* Ajusta el padding según sea necesario */
   background-color: rgb(0, 38, 82);
   border-radius: 5px;
   color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10px;
 }
 
 
@@ -327,7 +335,7 @@ h4 {
   margin-bottom: 20px; /* Espacio inferior respecto al formulario */
   padding-top: 10px; /* Espacio interior superior */
   padding-bottom: 10px; /* Espacio interior inferior */
-  background-color: rgb(0, 38, 82);
+  background-color: rgb(226, 116, 222);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -335,25 +343,25 @@ h4 {
 .social-icons h4 {
   margin-bottom: 10px; /* Espacio inferior respecto al título */
   font-size: 1.2rem;
-  color: #ffb6c1;
+  color: rgb(0, 38, 82);
 }
 
 .social-icon {
   font-size: 2rem;
-  color: #ffb6c1;
+  color: rgb(0, 38, 82);
   transition: color 0.3s;
   margin: 0 5px; /* Espacio horizontal entre los íconos */
 }
 
 .social-icon:hover {
-  color: #bccce1;
+  color: rgb(255, 60, 180);
 }
 
 .peluqueria-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #94c6dc;
+  background-color: #6b2d69;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
@@ -426,6 +434,7 @@ h4 {
 
 .intro {
   margin-bottom: 20px;
+  color: white;
 }
 
 .intro h1 {
@@ -437,6 +446,9 @@ h4 {
 .intro p {
   font-size: 16px;
   line-height: 1.5;
+}
+.input-box-peluqueria {
+  color: white;
 }
 @media (max-width: 768px) {
 
@@ -456,18 +468,17 @@ h4 {
   }
 
   .overlay-content p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .btn-primary {
-    font-size: 14px;
-    padding-left: 8px 16px;
+    font-size: 16px;
+    margin-top: 35px;
     
   }
   .btn-secondary {
-    font-size: 14px;
-    padding-right: 8px 16px;
-    
+    font-size: 16px;
+   
   }
 
   .urgencias-container {
@@ -493,6 +504,18 @@ h4 {
   .submit-btn-peluqueria {
     width: 40%;
     margin-left: 30%;
+  }
+
+  .overlay-content {
+    margin-top: 0px;
+  }
+
+  .overlay-content h1 {
+    font-size: 14px;
+  }
+
+  .custom-btn {
+    margin-bottom: -2px;
   }
 }
 
