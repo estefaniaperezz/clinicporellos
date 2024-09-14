@@ -107,7 +107,12 @@ const Peluqueria = () => {
         <>
           <div className="intro">
             <h1>Bienvenido a nuestra Peluquería</h1>
+            <br></br>
             <p>En nuestra peluquería nos especializamos en hacer que tu mascota luzca y se sienta increíble. En todos nuestros servicios ofrecemos un masaje relajante, corte de uñas, limpieza de oídos  y un toque final con perfume. Confía en nosotros para cuidar a tu mejor amigo con amor y profesionalismo.</p>
+           
+          </div>
+          <div className="image-lilo">
+            <img src="/lilo.jpg" alt="Lilo" className="img-lilo "/>
           </div>
           <div className="social-icons">
             <h4>¡Síguenos en nuestras redes!</h4>

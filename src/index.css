@@ -73,6 +73,11 @@ button.decline {
 button.decline {
   background-color: #ff6565; /* Color diferente para el botón de rechazo */
 }
+
+.img-lilo {
+  width: 80%;
+  margin-left: 50px;
+}
 /* Estilos para la politica de cookies */
 /* CookiePolicy.css */
 
@@ -447,7 +452,7 @@ h4 {
   margin-bottom: 20px; /* Espacio inferior respecto al formulario */
   padding-top: 10px; /* Espacio interior superior */
   padding-bottom: 10px; /* Espacio interior inferior */
-  background-color: rgb(226, 116, 222);
+  background-color: rgb(254, 175, 251);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -473,10 +478,11 @@ h4 {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #6b2d69;
+  background-color: rgb(0, 38, 82);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
+  
 }
 
 /* Estilos para el formulario de la peluquería */
@@ -511,10 +517,24 @@ h4 {
   height: 100px; /* Ajustar según sea necesario */
   resize: vertical; /* Permite redimensionar verticalmente */
 }
+.submit-btn{
+  background-color: rgb(254, 175, 251);
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 30%;
+  margin-left: 35%;
+}
 
+.submit-btn:hover {
+  background-color: rgb(69, 212, 240);
+}
 /* Estilos para el botón de enviar */
 .submit-btn-peluqueria {
-  background-color: rgb(0, 38, 82);
+  background-color: rgb(254, 175, 251);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -526,7 +546,7 @@ h4 {
 }
 
 .submit-btn-peluqueria:hover {
-  background-color: rgb(0, 71, 102);
+  background-color: rgb(69, 212, 240);
 }
 /* Estilos para la sección de mensaje de confirmación */
 .message-container {
