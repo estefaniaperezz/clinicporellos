@@ -34,7 +34,7 @@ const CookieBanner = () => {
           <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img" />
           <p>
       Utilizamos cookies para mejorar su experiencia en nuestro sitio web, análisis y marketing. 
-      Al continuar navegando, acepta nuestra<a href="/Cookie-Policy" className="cookie-link">  Política de Cookies  </a>.
+      Al continuar navegando, acepta nuestra<a href="/Cookie-Policy" >  Política de Cookies  </a>.
     </p>
           <button className="accept" onClick={acceptCookies}>¡De acuerdo!</button>
           <button className="decline" onClick={declineCookies}>No, gracias</button>
