@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // Solo importa React una vez
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes, NavLink, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
@@ -9,16 +9,21 @@ import Urgencias from './components/Urgencias';
 import Peluqueria from './components/Peluqueria';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import CookieBanner from './components/CookieBanner'; // Asegúrate de que la ruta es correcta
+import CookiePolicy from './components/CookiePolicy';
 
-function App() {
+import './App.css';
+
+const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop>
         <div style={{ backgroundColor: '#BCCCE1', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+          <CookieBanner /> {/* Asegúrate de que CookieBanner está importado y funciona */}
           <NavBar>
-            <NavLink to="/" className="nav-link" activeClassName="active" exact>Inicio</NavLink>
-            <NavLink to="/servicios" className="nav-link" activeClassName="active">Nuestros Servicios</NavLink>
-            <NavLink to="/Peluqueria" className="nav-link" activeClassName="active">Peluquería</NavLink>
+            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Inicio</NavLink>
+            <NavLink to="/servicios" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Nuestros Servicios</NavLink>
+            <NavLink to="/Peluqueria" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Peluquería</NavLink>
           </NavBar>
           <div style={{ flex: '1' }}>
             <Routes>
@@ -41,6 +46,7 @@ function App() {
               <Route path="/cita-previa" element={<CitaPrevia />} />
               <Route path="/urgencias" element={<Urgencias />} />
               <Route path="/Peluqueria" element={<Peluqueria />} />
+              <Route path="/Cookie-Policy" element={<CookiePolicy />} />
             </Routes>
           </div>
           <Footer />
@@ -48,6 +54,6 @@ function App() {
       </ScrollToTop>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

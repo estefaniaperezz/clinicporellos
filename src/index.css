@@ -9,6 +9,111 @@
 }
 
 
+/* Estilos para las cookies */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.cookiesContent {
+  width: 90%;
+  max-width: 500px; /* Tamaño máximo del banner */
+  background-color: #8cc0ea;
+  color: #000;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.cookiesContent img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.cookiesContent p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #c0c5cb;
+  cursor: pointer;
+}
+
+button.accept,
+button.decline {
+  background-color: #11216c;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button.decline {
+  background-color: #ff6565; /* Color diferente para el botón de rechazo */
+}
+/* Estilos para la politica de cookies */
+/* CookiePolicy.css */
+
+.cookie-policy {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cookie-policy .container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-policy h1,
+.cookie-policy h2 {
+  color: #333;
+}
+
+.cookie-policy p,
+.cookie-policy ul {
+  color: #555;
+}
+
+.cookie-policy a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cookie-policy a:hover {
+  text-decoration: underline;
+}
+
+.cookie-policy ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
 /* Estilos para los botones y enlaces de navegación */
 .custom-navbar {
@@ -460,24 +565,30 @@ h4 {
 @media (max-width: 768px) {
 
   .logo {
-    width: 110%; /* Ajusta la imagen al 100% del ancho del contenedor */
-    height: 40%; /* Mantiene la proporción original de la imagen */
-   
+    opacity: 0%;
   }
+
+  .hero-container {
+    padding: 10px; /* Ajusta el padding para dispositivos móviles */
+  }
+
   .overlay-content {
-   
-   padding-right: 20px;
-   max-height: 100%;
+    width: 70%;
   }
 
   .overlay-content h1 {
-    font-size: 24px;
-    padding-top: 0px;
+    font-size: 20px; /* Ajusta el tamaño de fuente para que quepa mejor */
   }
 
   .overlay-content p {
-    font-size: 13px;
+    font-size: 14px; /* Aumenta ligeramente el tamaño del texto para mejorar la legibilidad */
   }
+
+ /*our team */
+ .team-container-images{
+ padding-left: 30px;
+ padding-right: 30px;
+}
 
   
 
@@ -532,10 +643,17 @@ h4 {
 }
 
 
-
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    width: 200%;
+    margin-left: -320px;
+  }
+  .hero-container {
+    margin-bottom: -40px;
+    height: 450px;
+  }
   
-
+}
   
 
 
