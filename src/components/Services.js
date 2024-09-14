@@ -11,6 +11,9 @@ function Services() {
           <img src="/consultas.png" alt="Servicio 1" className="img-fluid" />
           <div className="service-description">
             <p>Consultas generales y especializadas para el cuidado de tu mascota.</p>
+            <Link to="/cita-previa">
+            <button className="btn btn-primary">Pide Cita</button>
+            </Link>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
@@ -30,10 +33,7 @@ function Services() {
         <div className="col-md-4 mb-4 text-center">
           <img src="/urgencias.png" alt="Servicio 4" className="img-fluid" />
           <div className="service-description">
-            <p>Nuestro servicio de urgencias 24h da cobertura a aquellos casos que requieran atención inmediata.</p>
-            <Link to="/urgencias">
-              <button className="btn btn-primary">Más información</button>
-            </Link>
+            <p>Nuestro servicio de laboratorio clinico.</p>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
@@ -48,7 +48,7 @@ function Services() {
         <div className="col-md-4 mb-4 text-center">
           <img src="/explotaciones.png" alt="Servicio 6" className="img-fluid" />
           <div className="service-description">
-            <p>Servicios Veterinarios para Explotaciones Ganaderas Atención especializada para el bienestar de tu ganado.</p>
+            <p>Tienda de alimentacion y accesorios para tu mascota.</p>
           </div>
         </div>
       </div>

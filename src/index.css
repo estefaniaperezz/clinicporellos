@@ -55,9 +55,9 @@
   background-color: rgb(0, 38, 82);
 }
 .logo {
-  max-width: 29%;
- margin-left: 10px;
-  margin-top: -10px;
+width: 105.35%;
+margin-left: -80px;
+
 }
 
 
@@ -67,7 +67,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: #BCCCE1; /* Fondo semi-transparente para mejorar la legibilidad */
+  background-color: rgba(188, 204, 225, 0.95); /* Fondo casi transparente (opacidad 0.3) */
   padding: 20px;
   border-radius: 10px;
   max-width: 700px; /* Limita el ancho del cuadro */
@@ -109,10 +109,11 @@
 
 .services-container h2 {
   color: rgb(0, 38, 82);
+  padding-bottom: 30px;
 }
 
 .services-container .row {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .services-container img {
@@ -144,14 +145,12 @@
 }
 
  /*our team */
-
-.team-member-img {
-  width: 500px; /* Ajusta el tamaño de las imágenes según tus preferencias */
-  height: 500px;
-  object-fit: cover; /* Ajusta el modo de ajuste para que las imágenes se vean bien en los círculos */
+.team-container-images{
+  margin-top: 30px;
 }
-
-
+.team-container-text{
+  padding-bottom: 40px;
+ }
 /*footer*/
 .footer {
   background-color: #fff4e1;
@@ -461,9 +460,9 @@ h4 {
 @media (max-width: 768px) {
 
   .logo {
-    max-width: 200px; /* Tamaño máximo del logo en dispositivos pequeños */
-    margin-top: 0px;
-    padding-right: 0%;
+    width: 110%; /* Ajusta la imagen al 100% del ancho del contenedor */
+    height: 40%; /* Mantiene la proporción original de la imagen */
+   
   }
   .overlay-content {
    
