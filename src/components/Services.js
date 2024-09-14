@@ -25,7 +25,7 @@ function Services() {
         <div className="col-md-4 mb-4 text-center">
           <img src="/cirugia.png" alt="Servicio 3" className="img-fluid" />
           <div className="service-description">
-            <p>Cirugías con el mejor equipo médico para tu mascota.</p>
+            <p>Realizamos cirugías con el mejor equipo médico brindando a tu mascota el mejor cuidado durante todo el proceso.</p>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ function Services() {
         <div className="col-md-4 mb-4 text-center">
           <img src="/urgencias.png" alt="Servicio 4" className="img-fluid" />
           <div className="service-description">
-            <p>Nuestro servicio de laboratorio clinico.</p>
+            <p>Nuestro laboratorio clínico ofrece análisis completos para un diagnóstico preciso, asegurando el mejor cuidado para tu mascota.</p>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
