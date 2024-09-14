@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+document.title = 'CV Por Ellos';
 
 const container = document.getElementById('root'); // Obtén el contenedor donde se montará la aplicación
 
