@@ -47,7 +47,7 @@ const CookiePolicy = () => {
           Si tiene alguna pregunta sobre nuestra Política de Cookies, puede ponerse en contacto con nosotros a través de:
         </p>
         <ul>
-          <li>Correo electrónico: <a href="#">cvporellos@gmail.com</a></li>
+          <li>Correo electrónico: cvporellos@gmail.com</li>
           <li>Dirección física: C. José Zorrilla, 2, 05400 Arenas de San Pedro, Ávila, España</li>
         </ul>
       </div>
