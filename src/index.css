@@ -7,7 +7,40 @@
 .App {
   text-align: center;
 }
+.img-fluid {
+  transition: transform 0.3s ease-in-out;
+}
 
+.img-fluid:hover {
+  transform: scale(1.1); /* Escala la imagen para que parezca que se acerca */
+}
+
+.img-lilo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-lilo:hover {
+  transform: scale(1.05); /* Escala la imagen para que parezca que se acerca */
+}
+
+.team-member-img {
+  width: 250px; /* Aumentamos el tamaño de la imagen */
+  height: 250px; /* Aumentamos el tamaño de la imagen */
+  object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+}
+
+.team-container .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centra el contenido de las columnas */
+  text-align: center; /* Centra el texto */
+  min-height: 350px; /* Ajusta esta altura para que todas las columnas tengan el mismo tamaño */
+}
+
+.team-container p {
+  margin: 0; /* Asegura que no haya márgenes adicionales en los párrafos */
+}
 
 /* Estilos para las cookies */
 

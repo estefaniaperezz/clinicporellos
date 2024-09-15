@@ -20,6 +20,9 @@ function Services() {
           <img src="/prevencion.png" alt="Servicio 2" className="img-fluid" />
           <div className="service-description">
             <p>Programas de prevención y vacunas para mantener a tu mascota sana.</p>
+            <Link to="/cita-previa">
+            <button className="btn btn-primary">Pide Cita</button>
+            </Link>
           </div>
         </div>
         <div className="col-md-4 mb-4 text-center">
