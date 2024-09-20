@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../index.css';
+import { Link } from 'react-router-dom';
 
 const CitaPrevia = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -35,7 +36,10 @@ const CitaPrevia = () => {
         <form className="contact-form" onSubmit={onSubmit}>
           <h2 className="text-center my-4">Solicitud de cita previa</h2>
           <div className="input-box">
-          <label className="form-label">Para citas de peluqueria pulse aqui</label>
+          <label className="form-label">
+      Para citas de peluquería{" "}
+      <Link to="/peluqueria">pulse aquí</Link>
+    </label>
           <br></br>  
           <br></br>  
              <label className="form-label">Nombre</label>
