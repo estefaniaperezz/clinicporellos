@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import CookieBanner from './components/CookieBanner'; // Asegúrate de que la ruta es correcta
 import CookiePolicy from './components/CookiePolicy';
+import Juntacyl from './components/JuntacylTemp';
 
 import './App.css';
 
@@ -49,6 +50,7 @@ const App = () => {
               <Route path="/Cookie-Policy" element={<CookiePolicy />} />
             </Routes>
           </div>
+            <Juntacyl />
           <Footer />
         </div>
       </ScrollToTop>
