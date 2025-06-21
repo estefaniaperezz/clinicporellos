@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 
 const Juntacyl = () => (
-    <section className="py-8 px-4 bg-white">
+    <section className="py-8 px-4 bg-white mt-5">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
 
             <div className="row align-items-center">

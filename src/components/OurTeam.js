@@ -22,9 +22,9 @@ function OurTeam() {
           <p className="text-muted">Recepcionista</p>
         </div>
         <div className="col-md-3 mt-4 mb-4 text-center">
-          <img src="/veterinario4.jpg" alt="Persona 4" className="img-fluid rounded-circle mb-3 team-member-img"  />
-          <p className="fw-bold">Eva Rituerto</p>
-          <p className="text-muted">Peluquera</p>
+          <img src="" alt="Persona 4" className="img-fluid rounded-circle mb-3 team-member-img"  />
+          <p className="fw-bold">Estefanía Pérez</p>
+          <p className="text-muted">Recepcionista</p>
         </div>
       </div>
     </div>

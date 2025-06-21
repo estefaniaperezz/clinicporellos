@@ -37,8 +37,7 @@ const CitaPrevia = () => {
           <h2 className="text-center my-4">Solicitud de cita previa</h2>
           <div className="input-box">
           <label className="form-label">
-      Para citas de peluquería{" "}
-      <Link to="/peluqueria">pulse aquí</Link>
+
     </label>
           <br></br>  
           <br></br>  
@@ -63,12 +62,14 @@ const CitaPrevia = () => {
           </div>
           <button type="submit" className="submit-btn">Solicitar cita</button>
         </form>
+  
       ) : (
         <div className="message-container">
           <h3 className="text-center my-4">Su solicitud se ha realizado correctamente.<br></br> Nos pondremos en contacto lo antes posible, ¡gracias!</h3>
           
         </div>
       )}
+      
     </section>
   );
 };

@@ -39,15 +39,7 @@ function Services() {
             <p>Nuestro laboratorio clínico ofrece análisis completos para un diagnóstico preciso, asegurando el mejor cuidado para tu mascota.</p>
           </div>
         </div>
-        <div className="col-md-4 mb-4 text-center">
-          <img src="/peluqueria.png" alt="Servicio 5" className="img-fluid" />
-          <div className="service-description">
-            <p>Peluquería para Mascotas Dales a tus mascotas el cuidado y estilo que merecen.</p>
-            <Link to="/Peluqueria">
-            <button className="btn btn-primary">Pide Cita</button>
-            </Link>
-          </div>
-        </div>
+        
         <div className="col-md-4 mb-4 text-center">
           <img src="/explotaciones.png" alt="Servicio 6" className="img-fluid" />
           <div className="service-description">

@@ -6,7 +6,6 @@ import Services from './components/Services';
 import OurTeam from './components/OurTeam';
 import CitaPrevia from './components/CitaPrevia';
 import Urgencias from './components/Urgencias';
-import Peluqueria from './components/Peluqueria';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import CookieBanner from './components/CookieBanner'; // Asegúrate de que la ruta es correcta
@@ -24,7 +23,6 @@ const App = () => {
           <NavBar>
             <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Inicio</NavLink>
             <NavLink to="/servicios" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Nuestros Servicios</NavLink>
-            <NavLink to="/Peluqueria" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Peluquería</NavLink>
           </NavBar>
           <div style={{ flex: '1' }}>
             <Routes>
@@ -46,7 +44,6 @@ const App = () => {
               <Route path="/servicios" element={<Services />} />
               <Route path="/cita-previa" element={<CitaPrevia />} />
               <Route path="/urgencias" element={<Urgencias />} />
-              <Route path="/Peluqueria" element={<Peluqueria />} />
               <Route path="/Cookie-Policy" element={<CookiePolicy />} />
             </Routes>
           </div>
