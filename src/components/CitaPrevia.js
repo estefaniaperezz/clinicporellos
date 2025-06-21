@@ -69,7 +69,6 @@ const CitaPrevia = () => {
           
         </div>
       )}
-      
     </section>
   );
 };
