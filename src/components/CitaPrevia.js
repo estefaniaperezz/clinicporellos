@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../index.css';
-import { Link } from 'react-router-dom';
+
 
 const CitaPrevia = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
