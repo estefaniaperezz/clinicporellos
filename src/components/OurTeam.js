@@ -9,7 +9,7 @@ function OurTeam() {
         <div className="col-md-3 mt-4 mb-4 text-center">
           <img src="/veterinario1.jpg" alt="Persona 1" className="img-fluid rounded-circle mb-3 team-member-img"  />
           <p className="fw-bold">Irene Muñoz</p>
-          <p className="text-muted">Gerente/Veterinaria</p>
+          <p className="text-muted">Gerente / Veterinaria</p>
         </div>
         <div className="col-md-3 mt-4 mb-4 text-center">
           <img src="/veterinario2.jpg" alt="Persona 2" className="img-fluid rounded-circle mb-3 team-member-img" />
@@ -22,9 +22,9 @@ function OurTeam() {
           <p className="text-muted">Recepcionista</p>
         </div>
         <div className="col-md-3 mt-4 mb-4 text-center">
-          <img src="" alt="Persona 4" className="img-fluid rounded-circle mb-3 team-member-img"  />
+          <img src="/veterinario4.jpg" alt="Persona 4" className="img-fluid rounded-circle mb-3 team-member-img"  />
           <p className="fw-bold">Estefanía Pérez</p>
-          <p className="text-muted">Recepcionista</p>
+          <p className="text-muted">Administración / RRSS</p>
         </div>
       </div>
     </div>
