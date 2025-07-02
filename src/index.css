@@ -333,7 +333,7 @@ h4 {
   justify-content: center;
   align-items: center;
   margin-top: 0px; /* Ajusta el margen superior según sea necesario */
-  background-color: #fff4e1;
+  background-color: #ffE4e1;
   
 }
 
@@ -617,6 +617,13 @@ h4 {
 .input-box-peluqueria {
   color: white;
 }
+.email-break {
+  display: none;
+}
+
+.email-inline {
+  display: inline;
+}
 @media (max-width: 768px) {
 
   .logo {
@@ -659,7 +666,7 @@ h4 {
   .contacto-container {
     width: 90%; /* Ajuste el ancho del contenedor principal para dispositivos móviles */
     max-width: none; /* Elimine el máximo ancho para ocupar el ancho completo en dispositivos pequeños */
-    margin-left: 22px;
+    margin-left: 20px;
   }
 
   .intro h1 {
@@ -695,6 +702,31 @@ h4 {
     height: 430px; /* Establece una altura fija o ajusta según tus necesidades */
   
   }
+
+.contact-box p.phone {
+    white-space: normal;
+    font-size: 15px;
+  }
+  .contact-box{
+
+    font-size: 14px;
+  }
+
+  .email-break {
+    display: inline;
+
+  }
+
+  .email-inline {
+    display: none;
+  }
+
+
+
+
+
+
+
 }
 
 

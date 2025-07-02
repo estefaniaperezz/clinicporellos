@@ -8,9 +8,16 @@ function Footer() {
       <div className="footer-content">
         <div className="contact-info contact-box">
           <h4>Contacto</h4>
-          <p>Teléfono Clínica: +34 920 094 517</p>
-          <p>Whatsapp Clínica: +34 623 572 928</p>
-          <p>Email: citascvporellos@gmail.com</p>
+          <p className="phone">Teléfono Clínica: +34 920 094 517</p>
+          <p className="phone">Whatsapp Clínica: +34 623 572 928</p>
+          <p>Email:&nbsp;
+  <a href="mailto:citascvporellos@gmail.com" className="email-break">
+    citascvporellos<br />@gmail.com
+  </a>
+  <a href="mailto:citascvporellos@gmail.com" className="email-inline">
+    citascvporellos@gmail.com
+  </a>
+</p>
           <p>Dirección: <a href="https://maps.app.goo.gl/NaTMS1sSqUXC5k9t6" target="_blank" rel="noopener noreferrer">C. José Zorrilla, nº2, 05400 Arenas de San Pedro, Ávila</a></p>
           <div className="social-container">
             <a href="https://www.facebook.com/profile.php?id=61561717139515"><FaFacebookSquare style={{ fontSize: '40px' }} /></a>
