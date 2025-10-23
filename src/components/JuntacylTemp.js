@@ -16,7 +16,7 @@ const Juntacyl = () => (
                     <p>
                         Proyecto: Clínica veterinaria por ellos<br></br>
                         Código de expediente: 01/23/AV/0011<br></br>
-                        plazo de ejecución:31/12/2025
+                        Plazo de ejecución:31/12/2025
                     </p>
 
                 </div>
